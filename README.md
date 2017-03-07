@@ -1,7 +1,5 @@
 # Unity 2d Platformer Tutorial
----
 ## Episode 1
-
 ### Prerequisites
 * Standard Assets (packages 2D and Cameras)
 
@@ -12,6 +10,17 @@
 
 ### 02 - Adding an enemy
 * Creating Enemy prefab from CharacterRobotBoy
-* Adding Goomba-like weakness to enemy so Player can jump on head to kill
+* Adding Goomba-like weakness to Enemy so Player can stomp on head to kill
 
----
+## Episode 2
+
+### 01 - Fixing enemy head collision detection
+* Fix enemy collision detection to only trigger when Enemy head is stomped on
+
+### 02 - Adding Player health
+* Add Player health
+* Add simple collision detection with Enemy
+* Add Player death when health <= 0
+
+### 03 - Fixing Player hit collision detection
+* Fix player collision so that stomps do not hurt player
