@@ -24,3 +24,19 @@
 
 ### 03 - Fixing Player hit collision detection
 * Fix player collision so that stomps do not hurt player
+
+## Episode 3
+
+### 01 - Adding sound effects
+
+## Episode 4
+
+## 01 - Walk to the right AKA Screen scroll locking
+
+## 02 - Adding auto scroll (Optional)
+
+## Episode 5
+
+## 01 - Our first puzzle: Using a block to jump over obstacle
+
+## 02 - Our second puzzle: Using a block to hold down a pressure switch

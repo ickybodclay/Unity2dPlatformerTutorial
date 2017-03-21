@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace UnityStandardAssets._2D
@@ -20,6 +19,9 @@ namespace UnityStandardAssets._2D
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 
+        [SerializeField] private AudioClip m_jumpSfx;
+        private AudioSource m_audioSource;
+
         private void Awake()
         {
             // Setting up references.
@@ -27,6 +29,8 @@ namespace UnityStandardAssets._2D
             m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
+
+            m_audioSource = GetComponent<AudioSource>();
         }
 
 
@@ -96,6 +100,10 @@ namespace UnityStandardAssets._2D
                 m_Grounded = false;
                 m_Anim.SetBool("Ground", false);
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+
+                m_audioSource.clip = m_jumpSfx;
+                m_audioSource.pitch = Random.Range(0.95f, 1.05f);
+                m_audioSource.Play();
             }
         }
 

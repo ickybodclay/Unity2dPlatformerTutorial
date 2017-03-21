@@ -12,9 +12,14 @@ public class Player : MonoBehaviour {
     private float m_flashDuration = 0.25f;
 
     private SpriteRenderer m_renderer;
+    private AudioSource m_audioSource;
+
+    [SerializeField]
+    AudioClip m_hitSfx;
 
     private void Start() {
         m_renderer = GetComponent<SpriteRenderer>();
+        m_audioSource = GetComponent<AudioSource>();
     }
 
     private void Update() {
@@ -43,6 +48,10 @@ public class Player : MonoBehaviour {
         Debug.Log("HIT!");
 
         m_health--;
+
+        m_audioSource.clip = m_hitSfx;
+        m_audioSource.pitch = Random.Range(0.95f, 1.05f);
+        m_audioSource.Play();
 
         if (m_health <= 0) {
             Die();
