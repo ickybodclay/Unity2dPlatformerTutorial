@@ -28,6 +28,9 @@
 ## Episode 3
 
 ### 01 - Adding sound effects
+* Add hit sound effect to Player and Enemy
+* Randomizing pitch for more interesting sounds
+* Add jump sound effect to Player
 
 ## Episode 4
 
