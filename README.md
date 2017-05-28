@@ -34,11 +34,18 @@
 
 ## Episode 4
 
+### 01 - Adding our first obstacle - Door & switch
+* Add door
+* Add switch that has a trigger area on top
+* Add script to switch
+
+## Episode 5
+
 ## 01 - Walk to the right AKA Screen scroll locking
 
 ## 02 - Adding auto scroll (Optional)
 
-## Episode 5
+## Episode 6
 
 ## 01 - Our first puzzle: Using a block to jump over obstacle
 
